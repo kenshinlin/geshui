@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>  
+    <title>啃先生计税</title>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?b0e32dc8bd58170317034100c1f8714b";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <script type="text/javascript">
+    	
+    	var cssEl = document.createElement('style');
+    	document.documentElement.firstElementChild.appendChild(cssEl);
+    
+    	function setPxPerRem(){
+            var dpr = 1;
+	    	//把viewport分成10份的rem，html标签的font-size设置为1rem的大小;
+	    	var pxPerRem = document.documentElement.clientWidth * dpr / 10;
+			cssEl.innerHTML = 'html{font-size:' + pxPerRem + 'px!important;}';
+    	}
+
+		var tid;
+		window.addEventListener('resize', function() {
+	        clearTimeout(tid);
+	        tid = setTimeout(setPxPerRem, 300);
+	    }, false);
+
+        setPxPerRem();
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="comm/weui.min.css">
+    <style type="text/css">
+    .result-card{
+        margin: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: #eee;
+    }
+    .result-card-white{background: #FFF;}
+    .result-img{
+        width: 150px;
+    }
+    .center{text-align: center;}
+    .highlight{color: #29a9ff;}
+    .qrcode-wrap{
+        padding-top:12px;
+    }
+    .weui_btn_area{margin-top: 0.8em;}
+    </style>
+</head>
+
+<body>
+    <div class="page" id="page">
+    </div>
+</body>
+
+</html>

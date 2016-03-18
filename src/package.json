@@ -1,0 +1,27 @@
+{
+  "name": "tax",
+  "version": "1.0.0",
+  "description": "计算个人所得税",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [
+    "Demo",
+    "Flux",
+    "React"
+  ],
+  "author": "Ken",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "~5.3.2",
+    "copy-webpack-plugin": "^1.0.0",
+    "css-loader": "^0.19.0",
+    "extract-text-webpack-plugin": "^1.0.0",
+    "file-loader": "^0.8.5",
+    "flux": "~2.0.3",
+    "html-webpack-plugin": "^1.7.0",
+    "object-assign": "^4.0.1",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "url-loader": "^0.5.7"
+  }
+}
